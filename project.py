@@ -43,9 +43,10 @@ try:
                 num = int(numPrompt)
                 break
             except:
-                print("You did not enter a valid choise. Please try again.")
+                print("You did not enter a valid choice. Please try again.")
+                # Get number of questions from user
                 numPrompt = input("\nHow many questions do you want per game (1 to 10)?: ")
-
+                
         if game == '1':
             mg.noOfQuestions = num
             printInstructions(mathInstructions)
@@ -61,5 +62,5 @@ try:
     updateUserScore(newUser, userName, str(score))
 
 except Exception as e:
-    print("An unknow error occurred. Program will exit.")
+    print("An unknown error occurred. Program will exit.")
     print("Error: ", e)
