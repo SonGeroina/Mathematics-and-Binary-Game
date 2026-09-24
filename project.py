@@ -1,5 +1,6 @@
 from gametasks import printInstructions, getUserScore, updateUserScore
 from gameclasses import Game, MathGame, BinaryGame
+# Main game loop
 try:
     mathInstructions =  '''
                         В этой игре вам предлагается решить простую арифметическую задачу.
